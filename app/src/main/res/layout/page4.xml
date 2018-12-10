@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="30dp"
+    app:cardElevation="4dp"
+    >/>
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+        <TextView
+            android:id="@+id/add_employee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Employee"
+            android:textSize="20sp"
+            android:textColor="#BFBFBF"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="20dp"
+            android:padding="4dp"
+            />
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UserName :"
+            android:padding="4dp"
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_employee"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="50dp"
+            />
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ahmed.Amin"
+            android:textSize="17sp"
+            android:padding="4dp"
+            android:textColor="#AED065"
+            app:layout_constraintStart_toEndOf="@+id/username"
+            app:layout_constraintTop_toBottomOf="@+id/add_employee"
+            app:layout_constraintEnd_toEndOf=""
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="20dp"
+            />
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password :"
+            android:padding="4dp"
+            android:textSize="17dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="@id/username"
+            app:layout_constraintTop_toBottomOf="@+id/username"
+            app:layout_constraintEnd_toEndOf="@id/username"
+             />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12345678"
+            android:textSize="17dp"
+            android:textColor="#AED065"
+            android:padding="4dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toEndOf="@id/password"
+            app:layout_constraintTop_toBottomOf="@id/user"
+            app:layout_constraintEnd_toEndOf="@id/user"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:layout_marginRight="19dp"
+            android:src="@drawable/ic_icon_1_"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:background="@drawable/text"
+            app:layout_constraintTop_toBottomOf="@+id/password"
+            app:layout_constraintStart_toStartOf="@+id/add_employee"
+            app:layout_constraintEnd_toEndOf="@id/add_employee"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="50dp"
+            android:padding="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="56dp"
+                android:text="Confirm"
+                android:textColor="#F69D07" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="56dp"
+                android:padding="1dp"
+                android:layout_marginStart="30dp"
+                android:src="@drawable/ic_person" />
+
+        </RelativeLayout>
+
+
+
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

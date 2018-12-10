@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="30dp"
+    app:cardElevation="4dp"
+    >
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:layout_marginRight="19dp"
+            android:src="@drawable/ic_icon_1_"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/add_employee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Employee"
+            android:textSize="20sp"
+            android:textColor="#514B66"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="20dp"
+            android:padding="4dp"
+            />
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UserName :"
+            android:padding="4dp"
+            android:textSize="17dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_employee"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="50dp"
+            />
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ahmed.Amin"
+            android:textSize="17dp"
+            android:padding="4dp"
+            android:textColor="#AED065"
+            app:layout_constraintStart_toEndOf="@+id/username"
+            app:layout_constraintTop_toBottomOf="@+id/add_employee"
+            app:layout_constraintEnd_toEndOf=""
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            />
+        <TextView
+            android:id="@+id/hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Are you sure yo want to"
+            android:textColor="#BFBFBF"
+            android:padding="1dp"
+            android:textSize="15dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="@id/add_employee"
+            app:layout_constraintTop_toBottomOf="@+id/username"
+            app:layout_constraintEnd_toEndOf="@id/add_employee"
+            />
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset Password to"
+            android:textColor="#BFBFBF"
+            android:padding="1dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintStart_toStartOf="@id/hint"
+            app:layout_constraintTop_toBottomOf="@+id/hint"
+            app:layout_constraintEnd_toEndOf="@id/add_employee"
+            />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:padding="1dp"
+            android:text="12345678"
+            android:textColor="#AED065"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="@id/add_employee"
+            app:layout_constraintStart_toStartOf="@id/add_employee"
+            app:layout_constraintTop_toBottomOf="@+id/hint" />
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/buttun"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:background="@drawable/text"
+            app:layout_constraintTop_toBottomOf="@+id/password"
+            app:layout_constraintStart_toStartOf="@+id/add_employee"
+            app:layout_constraintEnd_toEndOf="@id/add_employee"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="50dp"
+            android:padding="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="56dp"
+                android:text="Confirm Reset"
+                android:textColor="#F69D07" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="56dp"
+                android:padding="1dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/ic_refresh2" />
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/buttun"
+            app:layout_constraintStart_toStartOf="@id/buttun"
+            app:layout_constraintEnd_toEndOf="@id/buttun"
+            android:text="Cancel"
+            android:layout_marginTop="10dp"
+            android:padding="20dp"
+            android:textSize="17sp"
+            android:textColor="#DC6951"/>
+
+
+
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>
